@@ -15,7 +15,7 @@ const Navbar = () => {
       <nav className="flex flex-col space-y-4 px-4">
         {/* Dashboard - Active Item */}
         <a 
-          href="#" 
+          href="/dashboard" 
           className="flex items-center p-3 rounded-md bg-rose-50 text-rose-500 font-medium"
         >
           <LayoutGrid className="mr-3 h-5 w-5" />
@@ -24,7 +24,7 @@ const Navbar = () => {
 
         {/* Reports */}
         <a 
-          href="#" 
+          href="/dashboard/reports" 
           className="flex items-center p-3 rounded-md text-gray-800 hover:bg-gray-100 font-medium"
         >
           <LineChart className="mr-3 h-5 w-5" />
@@ -33,7 +33,7 @@ const Navbar = () => {
 
         {/* Users */}
         <a 
-          href="#" 
+          href="/dashboard/users" 
           className="flex items-center p-3 rounded-md text-gray-800 hover:bg-gray-100 font-medium"
         >
           <Users className="mr-3 h-5 w-5" />
