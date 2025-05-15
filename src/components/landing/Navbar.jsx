@@ -15,7 +15,7 @@ const Sidebar = () => {
         <div className="relative">
           <div className="flex items-center bg-gray-100 rounded-full px-4 py-2 w-64">
             <Search className="h-5 w-5 text-gray-400 mr-2" />
-            <input 
+            <input
               type="text" 
               placeholder="Search for something" 
               className="bg-transparent border-none outline-none text-gray-600 w-full"
