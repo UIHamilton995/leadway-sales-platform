@@ -3,6 +3,7 @@ import Dashboard from "../pages/Dashboard";
 import Homepage from "../pages/Homepage";
 import Reports from "../pages/Reports";
 import Users from "../pages/Users";
+import ReportDetails from "../pages/ReportDetails";
 
 const DashboardNavigations = () => {
   return (
@@ -12,6 +13,7 @@ const DashboardNavigations = () => {
         <Route index element={<Homepage />} />
         <Route path="/reports" element={<Reports />} />
         <Route path="/users" element={<Users />} />
+        <Route path="/reportDetails" element={<ReportDetails />} />
       </Route>    
     </Routes>   
   )

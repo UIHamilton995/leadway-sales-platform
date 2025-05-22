@@ -47,7 +47,7 @@ const EarningsHeader = () => {
   ];
 
   return (
-    <div className="p-3">
+    <div className="p-2">
       <MetricsSection metrics={metrics} />
     </div>
   );

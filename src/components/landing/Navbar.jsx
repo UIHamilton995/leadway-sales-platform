@@ -1,12 +1,27 @@
 import React from 'react';
 import { Search, Bell, Settings } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 
 const Sidebar = () => {
+  const location = useLocation();
+  
+  const getTitle = () => {
+    switch(location.pathname) {
+      case '/dashboard':
+        return 'Dashboard';
+      case '/dashboard/reports':
+        return 'Reports';
+      case '/dashboard/users':
+        return 'Users';
+      default:
+        return 'Dashboard';
+    }
+  };
+
   return (
     <div className="w-full bg-white border-b border-gray-300 shadow-sm py-3 px-6 flex items-center justify-between">
-      {/* Left side - Dashboard Title */}
       <div>
-        <h1 className="text-3xl font-medium text-gray-800">Dashboard</h1>
+        <h1 className="text-3xl font-medium text-gray-800">{getTitle()}</h1>
       </div>
       
       {/* Right side - Search, Settings, Notifications, Profile */}
@@ -42,7 +57,7 @@ const Sidebar = () => {
             className="h-full w-full object-cover"
           />
         </div>
-      </div>
+      </div>    
     </div>
   );
 };

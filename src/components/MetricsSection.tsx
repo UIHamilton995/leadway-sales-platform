@@ -13,12 +13,12 @@ interface MetricsSectionProps {
 
 const MetricsSection: React.FC<MetricsSectionProps> = ({ metrics }) => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-5">
-      <div className="flex flex-wrap gap-8">
+    <div className="bg-white shadow-md rounded-lg p-3">
+      <div className="flex flex-wrap gap-8 justify-around">
         {metrics.map((metric, index) => (
           <div
             key={index}
-            className="flex items-center space-x-12 bg-gray-50 p-4 rounded-lg shadow-sm"
+            className="flex items-center space-x-14 bg-gray-50 p-4 rounded-lg shadow-sm"
           >
             {/* Icon */}
             <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
