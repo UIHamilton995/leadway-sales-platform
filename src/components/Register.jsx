@@ -16,27 +16,27 @@ const Register = () => {
   return (
     <div className="flex max-h-screen">
       {/* Left side - Signup form */}
-      <div className="w-full md:w-1/2 p-4 flex flex-col justify-center">
+      <div className="w-full md:w-1/2 p-2 flex flex-col justify-center">
         <div className="max-w-md mx-auto w-full">
           {/* Logo */}
-          <div className="mb-4">
+          <div className="">
             <div className="flex items-center">
               <img src="/LeadwayLogo.svg" alt="Leadway Logo" className="h-16" />
             </div>
           </div>
 
           {/* Title */}
-          <h1 className="text-3xl font-bold leading-tight mb-6 text-customPink">
+          <h1 className="text-3xl font-bold leading-tight mb-4 text-customPink">
             Welcome to Leadway<br />Health HMO Report Portal
           </h1>
 
           {/* Signup Form */}
           <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
             <h2 className="text-2xl font-bold mb-1">Signup</h2>
-            <p className="text-gray-700 mb-6">to get started</p>
+            <p className="text-gray-700 mb-2">to get started</p>
 
             <form onSubmit={handleSubmit}>
-              <div className="mb-4">
+              <div className="mb-2">
                 <input
                   type="text"
                   value={username}
@@ -45,7 +45,7 @@ const Register = () => {
                   placeholder="Username"
                 />
               </div>
-              <div className="mb-4">
+              <div className="mb-2">
                 <input
                   type="email"
                   value={email}
@@ -55,7 +55,7 @@ const Register = () => {
                   readOnly
                 />
               </div>
-              <div className="mb-4">
+              <div className="mb-2">
                 <input
                   type="password"
                   value={password}
@@ -64,7 +64,7 @@ const Register = () => {
                   placeholder="Password"
                 />
               </div>
-              <div className="mb-6">
+              <div className="mb-4">
                 <input
                   type="password"
                   value={confirmPassword}
@@ -74,7 +74,7 @@ const Register = () => {
                 />
               </div>
               
-              <div className="mb-6 flex items-center">
+              <div className="mb-4 flex items-center">
                 <input
                   type="checkbox"
                   id="terms"
@@ -95,7 +95,7 @@ const Register = () => {
               </button>
             </form>
 
-            <div className="mt-6 text-center text-sm">
+            <div className="mt-4 text-center text-sm">
               <span className="text-gray-600">Already registered?</span>{' '}
               <a href="/" className="text-black hover:text-rose-500 font-medium">
                 Login

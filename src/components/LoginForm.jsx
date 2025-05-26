@@ -14,24 +14,24 @@ const LoginForm = () => {
   return (
     <div className="flex h-screen">
       {/* Left side - Login form */}
-      <div className="w-full md:w-1/2 p-8 flex flex-col justify-center">
+      <div className="w-full md:w-1/2 flex flex-col justify-center">
         <div className="max-w-md mx-auto w-full">
           {/* Logo */}
-          <div className="mb-6">
+          <div className="mb-4">
             <div className="flex items-center">
               <img src="/LeadwayLogo.svg" alt="Leadway Logo" />
             </div>
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl font-bold leading-tight mb-10 text-customPink">
+          <h1 className="text-3xl font-bold leading-tight mb-4 text-customPink">
             Welcome to Leadway<br />Health HMO Report Portal
           </h1>
 
           {/* Login Form */}
           <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
             <h2 className="text-2xl font-bold mb-1">Login</h2>
-            <p className="text-gray-700 mb-6">to get started</p>
+            <p className="text-gray-700 mb-4">to get started</p>
 
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
@@ -52,7 +52,7 @@ const LoginForm = () => {
                   placeholder="********"
                 />
               </div>
-              <div className="mb-6">
+              <div className="mb-4">
                 <a href="#" className="text-sm text-gray-600 hover:text-red-500">
                   Forgot Password?
                 </a>
