@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../assets/leadway-team1.jpg';
+import { Link } from 'react-router-dom';
 
 const Register = () => {
   const [username, setUsername] = useState('');
@@ -95,12 +96,14 @@ const Register = () => {
               </button>
             </form>
 
+            <Link to='/'>
             <div className="mt-4 text-center text-sm">
               <span className="text-gray-600">Already registered?</span>{' '}
-              <a href="/" className="text-black hover:text-rose-500 font-medium">
+              <div className="text-black hover:text-rose-500 font-medium">
                 Login
-              </a>
+              </div>
             </div>
+            </Link>
           </div>
         </div>
       </div>

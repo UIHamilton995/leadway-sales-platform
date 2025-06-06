@@ -2,16 +2,16 @@ import React from 'react';
 import reports  from '../data/reports';
 
 // Define interface inside or import from reportData.ts if shared
-interface Report {
-  id: string;
-  createdBy: string;
-  dateCreated: string;
-  lastModified: string;
-  requestedBy: string;
-  status: 'Active' | 'Inactive';
-}
+const Report = [{
+  "id": "string",
+  "createdBy": "string",
+  "dateCreated": "string",
+  "lastModified": "string",
+  "requestedBy": "string",
+  "status": 'Active' | 'Inactive'
+}]
 
-const ReportTable: React.FC = () => {
+const ReportTable = () => {
   return (
     <div className="bg-white shadow-md rounded-lg overflow-hidden">
       {/* Header */}

@@ -1,23 +1,30 @@
 import React from 'react';
 
-interface Metric {
-  title: string;
-  value: string | number;
-  change: string; // e.g., "↑ 16% this month"
-  icon: React.ReactNode; // JSX for the icon
-}
+// Example metric data (replace with your actual data)
+const metrics = [
+  {
+    id: 1,
+    title: "Users",
+    value: 1200,
+    change: "↑ 16% this month",
+    icon: <span>📊</span>, // Replace with actual JSX
+  },
+  {
+    id: 2,
+    title: "Revenue",
+    value: "$45,000",
+    change: "↓ 5% this month",
+    icon: <span>💰</span>,
+  },
+];
 
-interface MetricsSectionProps {
-  metrics: Metric[];
-}
-
-const MetricsSection: React.FC<MetricsSectionProps> = ({ metrics }) => {
+const MetricsSection = ({ metrics }) => {
   return (
     <div className="bg-white shadow-md rounded-lg p-3">
       <div className="flex flex-wrap gap-8 justify-around">
-        {metrics.map((metric, index) => (
+        {metrics.map((metric) => (
           <div
-            key={index}
+            key={metric.id} // ✅ Use a unique ID instead of `index`
             className="flex items-center space-x-14 bg-gray-50 p-4 rounded-lg shadow-sm"
           >
             {/* Icon */}

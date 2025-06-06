@@ -2,12 +2,11 @@ import React from 'react'
 import EarningsHeader from '../components/EarningsHeader'
 import ReportTable from '../components/ReportTable'
 
-type Props = {}
 
-const Reports = (props: Props) => {
+const Reports = () => {
   return (
     <div>
-        <EarningsHeader />
+        <EarningsHeader /> 
         <ReportTable /> 
     </div>
   )

@@ -43,78 +43,64 @@ const ReportDetails = () => {
     // Tab 1: Receivables
     {
       headers: [
-        'Client',
-        'Policy Number',
-        'Receivable Amount',
+        'Customer',
+        'Start Date',
+        'Payment Terms',
         'Due Date',
-        'Days Outstanding',
-        'Status',
-        'Follow-up Date'
+        'Total Premium',
+        'Amount Due',
+        'Updates'
       ],
       data: [
         {
           col1: 'ABC Corporation',
-          col2: 'POL-2025-001244',
-          col3: '4,521,780.00',
-          col4: '15-Apr-2025',
-          col5: '36',
-          col6: 'Pending',
-          col7: '25-May-2025'
+          col2: '15-Apr-2025',
+          col3: 'Annual',
+          col4: '25-May-2025',
+          col5: '4,000,000',
+          col6: '3,000,000',
+          col7: 'Client has been billed for premium according to latest policy rates'
         },
         {
-          col1: 'XYZ Limited',
-          col2: 'POL-2025-002137',
-          col3: '2,145,325.50',
+          col1: 'Lily Hospital',
+          col2: '15-May-2025',
+          col3: 'Bi-Annual',
           col4: '22-Mar-2025',
-          col5: '60',
-          col6: 'Overdue',
-          col7: '22-May-2025'
+          col5: '600,000,000',
+          col6: '500,000,000',
+          col7: 'Overdue'
         }
       ]
     },
     // Tab 2: Exclusions
     {
       headers: [
-        'Policy Type',
-        'Exclusion Category',
-        'Description',
-        'Effective Date',
-        'Impacted Clients',
-        'Revenue Impact',
-        'Mitigation Plan'
+        'Company',
+        'Amount Invoiced',
+        'Date Invoiced',
+        'Payment Remark',
       ],
       data: [
         {
-          col1: 'Health Insurance',
-          col2: 'Pre-existing Conditions',
-          col3: 'Cardiac conditions older than 2 years',
+          col1: 'Lily Hospital',
+          col2: '3,452,700.00',
           col4: '01-Jan-2025',
-          col5: '127',
-          col6: '3,452,700.00',
-          col7: 'Specialized coverage option'
+          col3: 'Cardiac conditions older than 2 years',
         }
       ]
     },
     // Tab 3: Payment Received
     {
       headers: [
-        'Client Name',
-        'Policy Number',
-        'Payment Amount',
-        'Payment Date',
-        'Payment Method',
-        'Reference Number',
-        'Status'
+        'Client',
+        'Status',
+        'Amount received'
       ],
       data: [
         {
-          col1: 'Omega Industries',
-          col2: 'POL-2025-004567',
-          col3: '2,356,780.50',
-          col4: '15-May-2025',
-          col5: 'Bank Transfer',
-          col6: 'BT-20250515-089',
-          col7: 'Completed'
+          col1: 'Lily Hospital',
+          col2: 'Paid',
+          col3: '2,356,780.50'
         }
       ]
     },
@@ -122,114 +108,80 @@ const ReportDetails = () => {
     {
       headers: [
         'Client',
-        'Policy Type',
-        'Premium Value',
-        'Start Date',
-        'End Date',
-        'Status',
-        'Account Manager'
+        'Amount',
+        'Comment'
       ],
       data: [
         {
-          col1: 'Delta Corporation',
-          col2: 'Group Health Insurance',
-          col3: '12,450,780.00',
-          col4: '01-Jun-2025',
-          col5: '31-May-2026',
-          col6: 'Pending Activation',
-          col7: 'Jane Smith'
+          col1: 'Dangote Refinery',
+          col2: '12,450,780.00',
+          col3: 'Pending Activation',
         }
       ]
     },
     // Tab 5: Activities on Existing Clients
     {
       headers: [
-        'Client Name',
-        'Activity Type',
-        'Description',
-        'Date',
-        'Outcome',
-        'Follow-up Required',
-        'Assigned To'
+        'Client',
+        'Activity',
+        'Comments',
       ],
       data: [
         {
-          col1: 'Phoenix Group',
+          col1: 'BUA Group',
           col2: 'Policy Review',
-          col3: 'Annual coverage assessment',
-          col4: '12-May-2025',
-          col5: 'Additional coverage needed',
-          col6: 'Yes - 26-May-2025',
-          col7: 'Michael Johnson'
+          col3: 'Annual coverage assessment was succesful.'
         }
       ]
     },
     // Tab 6: 7-Month HMO Policy Review
     {
       headers: [
-        'Client',
-        'Policy Start',
-        'Review Date',
-        'Utilization Rate',
-        'Claim Ratio',
-        'Recommendation',
-        'Expected Renewal Premium'
+        'Company',
+        'Total Premium',
+        'Loss Ratio (LR)',
+        'Cost of Revenue (COR)',
+        'Comment'
       ],
       data: [
         {
-          col1: 'Gamma Healthcare',
-          col2: '01-Nov-2024',
-          col3: '15-May-2025',
+          col1: 'Airtel NG',
+          col2: '8,675,420.00',
+          col3: '40%',
           col4: '68%',
-          col5: '72%',
-          col6: 'Premium increase of 5%',
-          col7: '8,675,420.00'
+          col5: 'Premium increase of 5%',
         }
       ]
     },
     // Tab 7: Update on Renewals
     {
       headers: [
-        'Client',
-        'Current Policy End',
-        'Renewal Status',
-        'Current Premium',
-        'Proposed Premium',
-        'Change %',
-        'Decision Date'
+        'Company',
+        'Date',
+        'Premium',
+        'Status',
+        'Renewal Rate',
+        'Loss Ratio (LR)',
       ],
       data: [
         {
           col1: 'Epsilon Technologies',
           col2: '30-Jun-2025',
-          col3: 'Pending Client Decision',
           col4: '5,780,420.00',
-          col5: '6,128,245.20',
-          col6: '+6%',
-          col7: '15-Jun-2025'
+          col5: 'Pending',
+          col6: '10%',
+          col7: '30%'
         }
       ]
     },
     // Tab 8: Challenges for the Week/Month
     {
       headers: [
-        'Challenge Type',
-        'Description',
-        'Impact Level',
-        'Affected Clients',
-        'Resolution Plan',
-        'Owner',
-        'Target Date'
+        'Comments',
       ],
       data: [
         {
-          col1: 'System Outage',
-          col2: 'Claims processing delay due to system maintenance',
-          col3: 'Medium',
-          col4: '47',
-          col5: 'Extended working hours',
-          col6: 'IT & Claims Team',
-          col7: '25-May-2025'
+          col1: 'Claims processing delay due to system maintenance',
         }
       ]
     }

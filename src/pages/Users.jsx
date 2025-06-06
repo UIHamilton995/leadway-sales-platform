@@ -1,7 +1,7 @@
 import React from 'react';
 import { users } from '../data/users'
 
-const Users: React.FC = () => {
+const Users = () => {
   return (
     <div className="bg-white shadow-md rounded-lg overflow-hidden">
       {/* Header */}

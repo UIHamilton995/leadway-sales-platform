@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../assets/leadway-team1.jpg';
+import { Link } from 'react-router-dom';
 
 const LoginForm = () => {
   const [email, setEmail] = useState('h-ude@leadway.com');
@@ -57,20 +58,23 @@ const LoginForm = () => {
                   Forgot Password?
                 </a>
               </div>
+              <Link to='/dashboard'>
               <button
                 type="submit"
                 className="w-full bg-customPink text-white py-3 px-4 rounded font-medium hover:bg-red-600 transition duration-200"
               >
                 Continue
-              </button>
+              </button></Link>
             </form>
 
-            <div className="mt-6 text-center text-sm">
+            <Link to='/signup'>
+                <div className="mt-6 text-center text-sm">
               <span className="text-gray-600">New User?</span>{' '}
               <a href="/signup" className="text-gray-800 hover:text-red-500 font-medium">
                 Register
               </a>
             </div>
+            </Link>
           </div>
         </div>
       </div>
